@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta charset="UTF-8">
+    <title>Cybersecurity Simulators</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cyber Attack Simulators</h1>
+    <p>Learn safely through interactive simulations</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="learn.html">Learn</a>
+    <a href="simulators.html">Simulators</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+</nav>
+
+<main>
+
+    <section id="phishing">
+    <h2>Phishing Email Simulator</h2>
+
+    <div class="email-box">
+        <p><strong>From:</strong> security@paypa1.com</p>
+        <p><strong>Subject:</strong> Urgent! Verify Your Account</p>
+        <hr>
+        <p>
+            Dear User,<br><br>
+            Your account has been suspended.  
+            Click the link below to verify your account immediately.<br><br>
+            <a href="#">Verify Now</a>
+        </p>
+    </div>
+
+    <p><strong>Is this email safe?</strong></p>
+
+    <button onclick="checkPhishing(true)">Phishing</button>
+    <button onclick="checkPhishing(false)">Safe</button>
+
+    <p id="phishingResult"></p>
+    </section>
+
+
+    <section id="password">
+    <h2> Password Strength Simulator</h2>
+
+    <p>Enter a password to check how strong it is:</p>
+
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <br><br>
+
+    <button onclick="checkPassword()">Check Strength</button>
+
+    <p id="passwordResult"></p>
+    </section>
+
+
+    <section id="bruteforce">
+    <h2>Brute Force Attack (Visual Simulator)</h2>
+
+    <p>
+        This simulator shows how long it may take to crack a password
+        using brute force techniques.
+    </p>
+
+    <p>Enter password length:</p>
+
+    <input type="number" id="passwordLength" min="1" max="20" placeholder="e.g. 6">
+    <br><br>
+
+    <button onclick="simulateBruteForce()">Simulate Attack</button>
+
+    <p id="bruteResult"></p>
+    </section>
+
+
+    <section id="social">
+    <h2>Social Engineering Scenario Simulator</h2>
+
+    <p><strong>Scenario:</strong></p>
+    <p>
+        You receive a phone call from someone claiming to be from the IT department.
+        They say your account has an issue and ask for your one‑time password (OTP)
+        to fix it immediately.
+    </p>
+
+    <p><strong>What should you do?</strong></p>
+
+    <button onclick="socialResponse('share')">
+        Share the OTP to fix the issue quickly
+    </button>
+
+    <button onclick="socialResponse('deny')">
+        Refuse and report the call to IT support
+    </button>
+
+    <p id="socialResult"></p>
+    </section>
+
+
+</main>
+
+<footer>
+    <p>© 2025 Cybersecurity Awareness Project | Developed by Manya R</p>
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+

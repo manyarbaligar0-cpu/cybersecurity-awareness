@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cybersecurity Awareness Quiz</h1>
+    <p>Test your understanding of common cyber threats</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="learn.html">Learn</a>
+    <a href="simulators.html">Simulators</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+</nav>
+
+<main>
+
+    <section>
+        <p><strong>1. What should you do if you receive a suspicious email?</strong></p>
+        <input type="radio" name="q1" value="0"> Click the link immediately<br>
+        <input type="radio" name="q1" value="1"> Verify the sender and report it<br>
+    </section>
+
+    <section>
+        <p><strong>2. Which password is the most secure?</strong></p>
+        <input type="radio" name="q2" value="0"> password123<br>
+        <input type="radio" name="q2" value="1"> P@ssw0rd!2024<br>
+    </section>
+
+    <section>
+        <p><strong>3. Should you share your OTP with IT support?</strong></p>
+        <input type="radio" name="q3" value="0"> Yes<br>
+        <input type="radio" name="q3" value="1"> No<br>
+    </section>
+
+    <section>
+        <p><strong>4. What is phishing?</strong></p>
+        <input type="radio" name="q4" value="1"> A fake message designed to steal information<br>
+        <input type="radio" name="q4" value="0"> A software update process<br>
+    </section>
+
+    <button onclick="calculateScore()">Submit Quiz</button>
+
+    <p id="quizResult"></p>
+
+</main>
+
+<footer>
+    <p>© 2025 Cybersecurity Awareness Project | Developed by Manya R</p>
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
